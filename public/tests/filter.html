@@ -1,0 +1,32 @@
+<html>
+<head>
+ 
+ <link rel="stylesheet" type="text/css" href="css/filter.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+</head>
+<body>
+	<input type="checkbox" class="checkbox" name="High" data-category-type="high">High
+    <input type="checkbox" class="checkbox" name="low" data-category-type="low" > Low
+    <input type="checkbox" class="checkbox" name="low" data-category-name="neukolln" > Neukolln
+
+
+
+<div class="nav">
+    <a href="#" data-category-type="high">high</a>
+    
+    <a href="#" data-category-type="low" data-category-name="air">low</a>
+    
+    <a href="#" data-category-name="pizza">pizza</a>
+    
+    </div>
+    <div id="Categories">
+        <div class="hide" data-category-type="high" data-category-name="pizza">high</div>
+        <div class="hide" data-category-type="low" data-category-name="pasta">low</div>
+        <div class="hide" data-category-type="low" data-category-name="pizza">low</div>
+        <div class="hide" data-category-type="high" data-category-name="neukolln">high or neukolln</div>
+    </div>
+
+<script src="js/hide.js"></script>
+</body>
+</html>

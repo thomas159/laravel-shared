@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5em;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif; color: #9E888A; 
+  display: flex;
+  min-height: 100em;
+  flex-direction: column;
+}
+
+.fullcontainer {
+  width:100%;
+  height:auto;
+  background:#ECF0F1;
+  color:#808B8D;
+}
+
+.container {
+  position:relative;
+  max-width:1200px;
+  margin:0 auto;
+  padding:40px 0px 40px 0px;
+}
+
+.content {
+  flex:1; 
+  margin-right:310px;
+}
+
+.gridlg--fit > .grid-cell {
+  flex: 1;
+}
+    
+.gridlg--full > .grid-cell {
+  flex: 0 0 100%;
+}
+    
+.gridlg--1of2 > .grid-cell {
+  flex: 0 0 50%;
+}
+    
+.gridlg--1of3 > .grid-cell {
+  flex: 0 0 33.3333%;
+}
+    
+.gridlg--1of4 > .grid-cell {
+  flex: 0 0 25%;
+}
+    
+.gridlg--1of5 > .grid-cell {
+  flex: 0 0 20%;
+}
+    
+.row1 {
+  flex:1;
+  background:#ccc;
+}
+    
+.row2 {
+  background:#000;
+  width:100%;
+  height:30px;
+}
+    
+.grid--flexCells > .grid-cell {
+  display: flex;
+}
+    
+.grid--gutters > .grid-cell {
+  padding: 5px;
+}
+    
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+    
+.grid-cell {
+  display:flex;
+  flex: 1;
+  flex-direction: column;
+}

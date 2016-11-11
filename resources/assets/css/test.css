@@ -1,0 +1,152 @@
+.row1 {
+  flex:1;
+  background:#ccc;
+}
+    
+.row2 {
+  background:#000;
+  width:100%;
+  height:30px;
+}
+
+
+/* ---- grid ---- */
+
+
+
+/* ---- grid ---- */
+
+.grid {
+  background:;
+  /* center */
+  margin: 0 auto;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-item {
+  width: 250px;
+  height: auto;
+  float: left;
+  margin-bottom:20px;
+}
+
+.grid-item--height2 { height: 200px; }
+.grid-item--height3 { height: auto; }
+
+
+.top {  background:#eee; height: 0px; /*this will work like some padding bottom missing  at section */
+    border-width: 100px 0px 0px 98.5vw;
+    border-style: solid;
+    border-color:  rgba(0,0,0,0) rgba(0,0,0,0)#eee  #fff; 
+line-height:0px;}
+.block{ width:100%; height:auto; background:#eee;}
+
+.fullcontainer .block:nth-child(2){ background:#fff;}
+
+ .bottom{ position:relative;background:#eee; height: 00px; /*this will work like some padding bottom missing  at section */
+    border-width: 60px 0px 0px 98.5vw;
+    border-style: solid;
+    border-color: #fff #eee ; 
+line-height:0px;}   
+
+ .bottom-footer{ position:relative;background:#eee; height: 0px; /*this will work like some padding bottom missing  at section */
+    border-width: 60px 0px 0px 98.5vw;
+    border-style: solid;
+    border-color: #e35050 #e35050 ; 
+line-height:0px;}   
+.bottom-content{position:absolute; top:300px;left:0px; height:100px; width:100px; background:#ff00ff;}
+ .home-diagonal{ position:relative;background:#eee; height: 0px; /*this will work like some padding bottom missing  at section */
+    border-width: 60px 0px 0px 98.5vw;
+    border-style: solid;
+    border-color: #3a3a3a #eee ; }   
+
+
+/* New Diagonal implementation */
+
+
+.fullcontainer-diag, .fullcontainer-diag:nth-child(odd), .fullcontainer-diag-home, .fullcontainer-title, .fullcontainer-diag-after {
+  background: #fff; color: #333; position: relative; z-index: 1; height:auto; }
+  .fullcontainer-diag:nth-child(odd), .fullcontainer-diag-home {
+  background: #0095bf; color: #fff; }
+ .fullcontainer-diag-title{
+  background:#282828; color: #fff; }
+.fullcontainer-footer {
+  background: #222; color: #fff; position: relative; z-index: 1; height:100px; }
+
+.fullcontainer-diag:before, .fullcontainer-diag:after, .fullcontainer-diag-home:before, .fullcontainer-diag-home:after, 
+.fullcontainer-footer:before, .fullcontainer-footer:after, .fullcontainer-diag-after:before, .fullcontainer-diag-after:after{
+  background: inherit;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+}
+.main:after{
+  background: inherit;
+  content: '';
+  display: block;
+  height: 100px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+}
+.fullcontainer-diag-title:before, .fullcontainer-diag-title:after{
+background: inherit;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+}
+.fullcontainer-diag:before, .fullcontainer-footer:before, .fullcontainer-diag-after:before {
+  top: 0; -webkit-transform: skewY(1.5deg); transform: skewY(1.5deg); -webkit-transform-origin: 100% 0; transform-origin: 100% 0; }
+.fullcontainer-diag:nth-child(1):before, .fullcontainer-diag-home:before, .fullcontainer-diag-title {
+  top: 0; -webkit-transform: skewY(0deg); transform: skewY(0deg); -webkit-transform-origin: 100% 0; transform-origin: 100% 0; }
+.fullcontainer-diag:after,.fullcontainer-diag-home:after, .fullcontainer-diag-title:after,.main:after{
+  bottom: 0; -webkit-transform: skewY(1.5deg); transform: skewY(1.5deg); -webkit-transform-origin:0 100%; transform-origin:0 100%; }
+.fullcontainer-footer:after, .main:before, .fullcontainer-diag-after:after {
+  bottom: 0; -webkit-transform: skewY(0deg); transform: skewY(0deg); -webkit-transform-origin:0 100%; transform-origin:0 100%; }
+
+.fullcontainer-diag{
+  margin: -1px 0px 0px 0px; text-align: left; padding: 1% 0px 1% 0px; }
+.fullcontainer-diag:nth-child(1), .fullcontainer-diag-after {
+  margin: -1px 0px 0px 0px; text-align: left; padding: 1% 0px 1% 0px; }
+.fullcontainer-diag-home {
+  margin: 0px 0px 20px 0px; text-align: left; padding: 2% 0px 2% 0px; }
+.fullcontainer-footer {
+  margin: 18px 0px 0px 0px; text-align: left; padding: 0% 0px 0% 0px; }
+.fullcontainer-diag-title{
+  margin: 0px 0px 40px 0px; text-align: left; padding: 0% 0px 0.3% 0px; }
+
+@media (min-width: 0px) and (max-width:768px) {
+.fullcontainer-title{margin: 0px 0px 10px 0px; }
+
+.beer-rank {color:#000; flex:0 0 10%; height:200px; background:#fff;}
+.beer-name {flex:1; height:auto; }
+.hero {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    bottom:  0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    height: 300px;
+    width: 100%;

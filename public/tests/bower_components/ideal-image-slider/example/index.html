@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ideal Image Slider Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="../ideal-image-slider.css">
+    <link rel="stylesheet" href="../themes/default/default.css">
+    <style media="screen">
+    #slider {
+        max-width: 100%;
+        margin: 50px auto;
+    }
+    #text{width:100%; position:absolute; bottom:0px; height:50px; background:#000;}
+    .blacktxt{color:000; font-size:70px;}
+    </style>
+</head>
+<body>
+
+	<div id="slider">
+    <img src="img/1.jpg" title="Baloons" alt="This is the caption content">
+    <img data-src="img/2.jpg" src="" title="Skateboard" alt="Captions <em>can</em> contain <strong>HTML</strong>">
+    <img data-src="img/3.jpg" src="" alt="This will be overridden" data-caption="#caption-3">
+    <img data-src="img/4.jpg" src="" title="A title without a caption" alt="">
+</div>
+
+<div id="caption-3" style="display:none;">
+    <h3>External Caption</h3>
+    <p>When using <a href="#">HTML in captions</a> it might be better to use an external caption.</p>
+</div>
+
+   <script src="../ideal-image-slider.js"></script>
+<script src="extensions/captions/iis-captions.js"></script>
+<script>
+var slider = new IdealImageSlider.Slider('#slider');
+slider.addCaptions();
+slider.start();
+</script>
+</body>
+</html>

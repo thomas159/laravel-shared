@@ -1,0 +1,21 @@
+body {
+  padding:0px;
+  margin: 0px;
+  /* needed for checkbox hack */
+  background: #021320;
+}
+/* needed for checkbox hack */
+h1, p {
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  & ul {
+    display: flex;
+    & a {
+      padding: 1rem 2rem;
+    }
+  }
+} 

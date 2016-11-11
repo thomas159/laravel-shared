@@ -1,0 +1,70 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="css/testlayout.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="header-wrap">
+
+    <header>    
+      <a href="#home" class="logo"><span class="coltext">SUPER</span>BERLIN</a>
+      <nav class="nav-collapse">
+        <ul>
+       <li>HOME</li>
+                  <li>{!! HTML::LINK('news','NEWS') !!}</a>
+                  <li>{!! HTML::LINK('reviews2','REVIEWS') !!}</li>
+                  <li>{!! HTML::LINK('recipes','RECIPES') !!}</li>
+                  <li>{!! HTML::LINK('links','LINKS') !!}</li>
+                  <li>{!! HTML::LINK('vslondon','VS LONDON') !!}</li>
+                  <li>{!! HTML::LINK('gallery','GALLERY') !!}</li>
+                  <li>{!! HTML::LINK('contact','CONTACT') !!}</li>
+        </ul>
+      </nav>
+    </header>
+</div>
+
+<body>
+<div id="main">   
+<!--Two column Wrap-->
+<!-- main content -->   
+    <div class="container">
+  <div class="content">
+    <div class="grid grid--flexcells grid--gutters grid--full gridsm--full gridmd--full gridlg--full">
+      <div class="grid-cell">
+        <div class="box">
+          <div class="home-text">
+            <div class="home-header"><h4>Latest Reviews</h4></div>@include('partials.home-reviews')
+            <div class="home-header"><h4>Latest Links</h4></div>@include('partials.home-links')
+          </div>
+        </div>
+      </div>    
+    </div>
+  </div>
+
+<!-- sidebar content -->
+    <aside>
+      <div class="sidebar">
+    Test
+      </div>  
+    </aside>
+  </div><!--Main End -->
+</div><!--Container end -->
+
+    
+</div>
+  <footer>
+  @include('includes.footer')
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+  

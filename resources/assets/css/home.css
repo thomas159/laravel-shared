@@ -1,0 +1,72 @@
+/*Home*/
+/*
+.home-box-wrap     { width:100%; height:auto; background-color:; float:left; margin-bottom:5%;box-sizing: border-box; }
+.home-header     { width:100%; height:auto; padding:0.5em; margin-bottom:1em; text-align:center; background-color:#ec2350; color:#fff; box-sizing: border-box; }
+.home-img img      { display: block; box-sizing: border-box; }
+.home-content      { width:100%; height:auto; padding:0.5em; color:#fff; box-sizing: border-box; }
+.home-content-alt     { width:100%; height:auto; text-align:center; padding:0.5em; margin-bottom:2%;color:#000; box-sizing: border-box; }
+.home-content-text-alt     { width:100%; height:auto; text-align:center; padding:0.5em; margin-bottom:2%;color:#000; box-sizing: border-box; }
+.home-readmore{width:50%; height:auto;margin: 0 auto; border:1px solid #ff00ff;padding:0.1em; text-align:center;}
+
+.home-header     { width: 100%; height:auto; margin: 0 auto; background-color:#DB016C; color:#fff; text-align:center;}
+.home-header-links     { width:30%; height:0%; border-bottom:4px solid #fff; margin: 0 auto; text-align:center;}
+*/
+
+.home-top{width:100%; height:120px; background:#fff; margin-bottom:2px ;}
+
+.hero {
+  position: relative;
+  background: url(../images/fullwidth/berlin_skyline.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 110px;
+  min-height: 400px;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+.hero h1 {
+  font-size: 50px;
+  line-height: 1.3;
+}
+.hero h1 span {
+  font-size: 25px;
+  color: #e8f380;
+  border-bottom: 2px solid #e8f380;
+  padding-bottom: 12px;
+  line-height: 3;
+}
+.home-text{flex:1; text-align:center;}
+.home-main-header{width:100%; height:30px; line-height:30px;background:#152836; color:#fff;font-weight:700;}
+.home-header{width:100%; height:40px; font-size:2em;font-weight:700; margin-top:10px;}
+.home-content{width:100%; height:auto;}
+.home-button{width:100%; height:40px;}
+.home-btn-submit {
+    /* placing */
+    margin-top: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* end of placing */
+    line-height:30px;
+    height: 30px;
+    width: 100px;
+    background-color: #FFF;
+    border: 2px solid #1ECD97;
+    border-radius: 10px;
+    color: #1ECD97;
+    font-size: 16px;
+    font-family: Montserrat;
+    transition: 0.4s;
+    outline-style: none;
+    cursor: pointer;
+    text-align:center;
+    font-weight:700;
+}
+.home-btn-submit:hover {
+    background-color: #1ECD97;
+    color: #FFF;
+    transition: 0.4s;
+}

@@ -1,0 +1,29 @@
+.form-contact-wrap{padding:10px; }
+.form-labels{text-align:right; padding:5px;}
+.form-control{width:100%}
+.form-group{width:100%; margin-top:10px;}
+.btn-submit {
+    /* placing */
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* end of placing */
+    height: 60px;
+    width: 150px;
+    background-color: #FFF;
+    border: 2px solid #1ECD97;
+    border-radius: 50px;
+    color: #1ECD97;
+    font-size: 16px;
+    font-family: Montserrat;
+    transition: 0.4s;
+    outline-style: none;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #1ECD97;
+    color: #FFF;
+    transition: 0.4s;
+}

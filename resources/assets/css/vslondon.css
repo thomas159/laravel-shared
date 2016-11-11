@@ -1,0 +1,57 @@
+.vslondon-wrap{width:100%; height:auto; border:1px solid #ccc;}
+/*COst of living compaison*/
+.vslondon-compare-info{width:100%; padding:10px;}
+.vslondon-compare-header{width:100%; }
+.vslondon-compare-header-col1{width:40%;  float:left; padding:10px; background:#e1e1e1;}
+.vslondon-compare-header-col2{width:20%;  float:left;padding:10px; background:#e1e1e1;}
+.vslondon-compare-header-col3{width:40%;  float:left;padding:10px; background:#e1e1e1;}
+
+.vslondon-compare{width:100%; }
+.vslondon-compare-col1{width:40%; float:left; }
+.vslondon-compare-col2{width:20%; float:left; }
+.vslondon-compare-col3{width:40%; float:left; }
+.vslondon-compare-item-row1{width:100%; padding:10px;background:#BEC3C7;}
+.vslondon-compare-item-row2{width:100%; padding:10px; background:#EFF3F4;}
+.vslondon-compare-price-row1{width:100%; padding:10px; background:#f0f0f0;}
+.vslondon-compare-price-row2{width:100%; padding:10px; background:#f9f9f9;}
+.vslondon-weather{width:40%; float:left;}
+.vslondon-low{width:20%; float:left;}
+.vslondon-high{width:20%; float:left;}
+
+
+.feed-thumb{width:100%; height:300px; display:block;}
+.feed-text{width:100%; min-height:100px; padding:20px;background:#fff; border-radius: 0px 0px 5px 5px;
+	border:1px solid #D3D6D6;}
+
+@media (min-width: 00px) and (max-width: 699px) {
+.listing {-moz-columns: 2;-webkit-columns: 2;columns: 2;-moz-column-gap: 10px;-webkit-column-gap: 10px;column-gap: 10px;padding:10px;}
+}
+@media (min-width: 700px) and (max-width: 999px) {
+.listing {-moz-columns: 2;-webkit-columns: 2;columns: 2;-moz-column-gap: 10px;-webkit-column-gap: 10px;column-gap: 10px;padding:10px;}
+}
+@media (min-width: 1000px) and (max-width: 1499px) {
+.listing {-moz-columns: 2;-webkit-columns: 2;columns: 2;-moz-column-gap: 20px;-webkit-column-gap: 20px;column-gap: 20px;padding:10px;}
+}
+@media (min-width: 1500px)  {
+.listing {-moz-columns: 4;-webkit-columns: 4;columns: 4;-moz-column-gap: 20px;-webkit-column-gap: 20px;column-gap: 20px;padding:10px;}
+}
+.listing .brick {
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  /* Firefox is dumb */
+  break-inside: avoid;
+}
+
+/* pretty it up! */
+.listing .brick {
+  margin:20px 0;
+  padding: 0px;
+}
+
+.listing .brick:first-child {
+  margin-top: 0;
+}
+
+.listing .brick:nth-child(odd) {
+  background-color: ;
+}
